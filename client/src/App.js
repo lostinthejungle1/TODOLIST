@@ -2,7 +2,7 @@ import React,{useState,useEffect} from 'react';
 
 
 import axios from 'axios';
-const path = `http://localhost:10000`;
+const path = `https://todolist-fv2x.onrender.com`;
 
 function App() {
   const [items,setItems] = useState([]);
