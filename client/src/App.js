@@ -10,7 +10,7 @@ function App() {
 
   const getItems = async ()=>{
     console.log(path);
-    const {data} = await axios.get(`https://todolist-fv2x.onrender.com/items`);
+    const {data} = await axios.get(`${path}/items`);
     setItems(data);
   }
 
