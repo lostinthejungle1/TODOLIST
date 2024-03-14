@@ -9,7 +9,8 @@ function App() {
   const [newItem,setNewItem] = useState('');
 
   const getItems = async ()=>{
-    const {data} = await axios.get(`${path}/items`);
+    console.log(path);
+    const {data} = await axios.get(`https://todolist-fv2x.onrender.com/items`);
     setItems(data);
   }
 
@@ -22,7 +23,6 @@ function App() {
     setNewItem('');
     getItems();
   }
-
 
 
   const handleItemDelete = async (id)=>{
