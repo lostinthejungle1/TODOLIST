@@ -8,7 +8,7 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT||3000;
 
-app.use(express.static('../client/build')); // serve static files (css & js) from the 'public' directory
+app.use(express.static('./build')); // serve static files (css & js) from the 'public' directory
 
 // PostgreSQL connection setup
 const pool = new Pool({
